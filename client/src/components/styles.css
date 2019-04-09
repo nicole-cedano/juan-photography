@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic:regular);
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Didact";
+}
+
+/* styling for the nav */
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    color: #1119;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 3;
+    transition: left 300ms linear;
+}
+
+.nav-open {
+    left: 0
+}
+
+.nav-closed {
+    left: -100vw;
+
+}
+
+.nav a {
+   width: 100%;
+   text-align: center;
+   padding: 10pt 0;
+   margin: 10pt;
+   transition: background-color 100ms linear;
+   font-size: 15pt; 
+   text-decoration: none;
+   color: white;
+}
+
+.nav a:visited {
+    color: white
+}
+
+.nav a:hover {
+    background-color: #5559
+}
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, .8);
+    position: absolute;
+    transition: left 300ms linear;
+    z-index: 2;
+    top: 0pt
+}
+
+.overlay-open {
+    left: 0;
+}
+
+.overlay-closed {
+    left: -100vw;
+}
+
+.rotate {
+    position: fixed;
+    margin:20px;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    margin: 20px;
+    font-size: 10px;
+    border: 1pt solid black;
+    border-radius: 10pt;
+    z-index: 1;
+    transform: rotate(90deg);
+    transition: transform 200ms linear, opacity 300ms linear;
+}
+
+.rotate-open {
+    transform: rotate(90deg)
+}
+
+.rotate-closed {
+    transform: rotate(0deg)
+}
+
+/* for contact page  */
+:root {
+    --border-forform: #ccc;
+    --formbackg: #fafafa;
+    --black-forinput:#222;
+    --buttonback: #171717;
+    --buttonwhite:#fff;
+    --onhover: #272727;
+
+}
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-form > h5{
+    text-align: left;
+}
+
+.contact-image {
+    width: 50%;
+    height: 300px;
+}
+.contact-form > input {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    margin: 6px 0 4px;
+    padding: 12px;
+    border: 1px solid var(--border-forform);
+    font-size: 12px;
+    background-color: var(--formbackg);
+    color: var(--black-forinput);
+}
+.contact-form > textarea {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    margin: 6px 0 4px;
+    padding: 12px;
+    border: 1px solid var(--border-forform);
+    font-size: 12px;
+    background-color: var(--formbackg);
+    color: var(--black-forinput);
+}
+.contact-form > button {
+    width: auto;
+    max-width: 100px;
+    background-color: var(--buttonback);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600px;
+    font-family: "proxima-nova";
+    text-align: center;
+    color: var(--buttonwhite);
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: var(--onhover);
+    cursor: pointer;
+    color: var(--buttonwhite);
+}
+.photos-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+} 
+.photos  {
+    height: 300px;
+    width: 300px; 
+    padding: 20px;
+}
+
+/* styling for video component */
+.video-wrapper {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+@media(min-width: 800px){
+    .contact-form > input {
+        width: 90vh;
+
+
+    }
+    .contact-form > textarea {
+        width: 90vh;
+    }
+    .contact-form-container {
+        margin: 150px;
+    }
+    .photos{
+        height: 500px;
+        width: auto;
+    }
+    .video-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+* {   
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans"
+}
+.wrapper {
+    margin: 0px !important;
+    padding: 20px !important;
+}
+
+.logo {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 30px;
+    max-width: 250px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 1.2em;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 800px){
+    .wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .wrapper div:nth-child(2){
+        grid-column: 1/2
+    }
+    .wrapper div:nth-child(3){
+        grid-column: 2/4
+    }
+}

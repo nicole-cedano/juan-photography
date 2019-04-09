@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans"
+}
+
+.media-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px;
+    padding: 20px;
+}
+
+.image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+    height: 100px;
+}
+.video-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+    height: 100px;
+}
+
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: 50px;
+}
+
+.forms-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.forms {
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: left;
+    width: 200px;
+    font-weight: 200px;
+    background-color: #fafafa;
+    border:solid 1px#ccc;
+    color:#222;
+}
+
+.forms > button {
+    width: 10px;
+    height: 10px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 8px;
+    justify-content:center; 
+    align-items: center;
+    margin: 5px;
+}
+
+
+/* styling for contact form */
+@media(min-width: 800pt){
+.media-admin {
+    margin: 20px;
+    padding: 20px;
+}
+
+.image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10pt;
+    height: 300pt;
+    grid-column: 1/2
+}
+.video-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10pt;
+    height: 300pt;
+    grid-column: 2/3;
+}
+
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10pt;
+    height: 300pt;
+    grid-column: 1/2
+}
+.forms-wrapper > h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.forms-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column; 
+}
+
+.input-login{
+    margin: 2px;
+}
