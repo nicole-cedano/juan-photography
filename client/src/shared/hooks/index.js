@@ -25,4 +25,3 @@ export const useFormProperties = (initInputs, callback) => {
     }
     return {handleChange, handleSubmit, inputs}
 }
-
